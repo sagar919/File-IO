@@ -12,15 +12,11 @@ namespace FileIO
 
             string Path = @"C:\Users\slad\OneDrive - MORNINGSTAR INC\Desktop\Test\FileIO.txt";
 
-            using (StreamReader sr = File.OpenText(Path))
+            using (StreamWriter sw = File.AppendText(Path))
             {
-                String s = "";
-                while ((s = sr.ReadLine()) != null)
-                {
-                    Console.WriteLine(s);
-                }
+                sw.WriteLine("Hello everyone");
+                sw.Close();
             }
-
         }
 
 
