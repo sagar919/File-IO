@@ -8,11 +8,13 @@ namespace FileIO
     {
         public static void Main(string[] args)
         {
-            string path = @"C:\Users\slad\OneDrive - MORNINGSTAR INC\Desktop\Test\git Token.txt";
+            string path = @"C:\Users\slad\OneDrive - MORNINGSTAR INC\Desktop\Test\FileIO.txt";
 
-            if (File.Exists(path))
-                Console.WriteLine("File Exists");
-            Console.ReadKey();
+            string[] lines;
+            lines = File.ReadAllLines(path);
+
+            Console.WriteLine(lines[0]);
+            Console.WriteLine(lines[1]);
 
         }
     }
