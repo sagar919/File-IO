@@ -10,11 +10,11 @@ namespace FileIO
         {
             string path = @"C:\Users\slad\OneDrive - MORNINGSTAR INC\Desktop\Test\FileIO.txt";
 
-            string[] lines;
-            lines = File.ReadAllLines(path);
+            string lines;
+            lines = File.ReadAllText(path);
 
-            Console.WriteLine(lines[0]);
-            Console.WriteLine(lines[1]);
+            Console.WriteLine(lines);
+            
 
         }
     }
