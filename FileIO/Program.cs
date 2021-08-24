@@ -10,10 +10,11 @@ namespace FileIO
         {
             string path = @"C:\Users\slad\OneDrive - MORNINGSTAR INC\Desktop\Test\FileIO.txt";
 
-            string lines;
-            lines = File.ReadAllText(path);
+            string copyPath = @"C:\Users\slad\OneDrive - MORNINGSTAR INC\Desktop\Test\FileIONew.txt";
 
-            Console.WriteLine(lines);
+            File.Copy(path, copyPath);
+
+            
             
 
         }
