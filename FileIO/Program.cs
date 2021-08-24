@@ -8,11 +8,15 @@ namespace FileIO
     {
         public static void Main(string[] args)
         {
-            string path = @"C:\Users\slad\OneDrive - MORNINGSTAR INC\Desktop\Test\FileIO.txt";
+            
 
-            string copyPath = @"C:\Users\slad\OneDrive - MORNINGSTAR INC\Desktop\Test\FileIONew.txt";
+            string Path = @"C:\Users\slad\OneDrive - MORNINGSTAR INC\Desktop\Test\FileIONew.txt";
 
-            File.Copy(path, copyPath);
+            File.Delete(Path);
+
+            Console.ReadKey();
+
+            
 
             
             
