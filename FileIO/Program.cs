@@ -10,17 +10,20 @@ namespace FileIO
         {
             
 
-            string Path = @"C:\Users\slad\OneDrive - MORNINGSTAR INC\Desktop\Test\FileIONew.txt";
+            string Path = @"C:\Users\slad\OneDrive - MORNINGSTAR INC\Desktop\Test\FileIO.txt";
 
-            File.Delete(Path);
-
-            Console.ReadKey();
-
-            
-
-            
-            
+            using (StreamReader sr = File.OpenText(Path))
+            {
+                String s = "";
+                while ((s = sr.ReadLine()) != null)
+                {
+                    Console.WriteLine(s);
+                }
+            }
 
         }
+
+
     }
 }
+
